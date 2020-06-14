@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8" />
     <title>Etch-A-Sketch</title>
-    <style>
-
-    .right {
-        float: right;
-    }
-    
-    .unlitSquare {
-        background-color: rgb(250, 234, 234);
-        border: 1px solid rgb(22, 5, 247);
-    }
-
-    .gridContainer {
-        display: inline-grid;
-        grid-template-columns: repeat(16, 4fr);
-        grid-template-rows: repeat(16, 4fr);
-        height: 960px;
-        width: 960px;
-        }
-
-    }
-    </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <script src="script.js"></script>
 <body>
+<div class="right">
+<div class="gridContainer">
+</div>    
+</div>
+
+<div class="page" >
+    <h1>ETCH-A-SKETCH</h1>
+    <label for="quantity">Type a value for grid size:</label>
+    <br>
+    <input type="number" id="quantity" name="quantity" />
+    <br>
+    <button class="reset">CLEAR GRID</button>
+    <br>
+    <label for="color">To toggle rainbow mode</label>
+    <button class="color">Click here</button>
+    <br>
+    <label for="shade">To toggle shading mode:</label>
+    <button class="shade">Click here</button>
+</div>
+</body>
+</html>
