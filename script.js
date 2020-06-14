@@ -8,23 +8,25 @@ function createGrid() {
   for (let i = 0; i < numberOfSquares * numberOfSquares ; i++) {
     const gridpixel = document.createElement("div");
     gridpixel.classList.add("unlitSquare")
-    gridpixel.addEventListener('mouseover', function(e){
+    gridpixel.addEventListener('mouseover', pickPen); 
+    grid.appendChild(gridpixel);
+  }
+}
+
+function pickPen(){
     if (shadeSwitch == true) {
         this.style["opacity"] = +this.style["opacity"] + .1;
     }
     if (colorSwitch == true) {
         getRandomColor();
-        e.target.style.setProperty(
+        this.style.setProperty(
         "background-color",
         getRandomColor());    }
     else {
-        e.target.style.setProperty(
+        this.style.setProperty(
         "background-color",
         "black");
-    }});
-    grid.appendChild(gridpixel);
-  }
-};
+    }};
 
 const shadeButton = document.querySelector(".shade");
 shadeButton.addEventListener("click", shadeMode);
