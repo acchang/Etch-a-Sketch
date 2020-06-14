@@ -1,6 +1,6 @@
-    let freshGrid = document.querySelector('#refresh');
-    let reset = document.querySelector('#reset');
-    let numberOfSquares = 16;
+let freshGrid = document.querySelector('#refresh');
+let reset = document.querySelector('#reset');
+let numberOfSquares = 16;
 
 const grid = document.querySelector(".gridContainer")
 
