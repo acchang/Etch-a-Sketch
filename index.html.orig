@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <title>Etch-A-Sketch</title>
 </head>
+<<<<<<< HEAD
 
+=======
 <link rel="stylesheet" href="style.css">
+>>>>>>> e639cc21f95178db7d30086a2f0b0f007ac789e4
 <body>
 <div class="right">
 <div class="gridContainer">
