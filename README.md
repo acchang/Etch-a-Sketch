@@ -1,3 +1,29 @@
+
+Nov. 19, 2021 -- Returning to the Odin course
+
+I started with trying to regain my fundamentals by reading through this code.
+
+The index.html file creates a <div> on the right with a class of "right" and within it a "gridContainer." It is right-justified per style.css
+
+Then there is a div with class "page" where all the buttons go.
+
+The bulk of the work is in the JS script.
+
+First, the createGrid() function loops until numberOfSquares is reached. Upon each loop, a div with the characteritics of "unlitSquare" is added and given an event listener that activates function pickPen on mouseover, and is appended to grid.
+
+grid is document.querySelector(".gridContainer")
+
+Pickpen uses a bunch of if then statements to decide how to draw the lines (colored or rainbow, shaded or not) with the booleans of shadeSwitch and colorSwitch.
+
+shadeSwitch and colorSwitch are boolean functions attached to eventlisteners to the buttons in the html.
+
+That's the basic framework. There is one old line I'm not aware of the purpose it serves:
+let freshGrid = document.querySelector('#refresh');
+
+freshGrid variable is never used.
+
+
+Previous Directions: Last commit was June 8, 2020!
 # Etch-a-Sketch
 https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project
 

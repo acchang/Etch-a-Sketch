@@ -11,8 +11,8 @@
         display: inline-grid;
         grid-template-columns: repeat(16, 4fr);
         grid-template-rows: repeat(16, 4fr);
-        height: 960px;
-        width: 960px;
+        height: 700px;
+        width: 700px;
         }
 
     }
