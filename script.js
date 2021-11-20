@@ -28,7 +28,7 @@ function pickPen(){
         "black");
     }};
 
-const shadeButton = document.querySelector(".shade");
+const shadeButton = document.querySelector('.shade');
 shadeButton.addEventListener("click", shadeMode);
 let shadeSwitch = false;
 

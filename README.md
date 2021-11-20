@@ -1,3 +1,44 @@
+
+Nov. 19, 2021 -- Returning to the Odin course again
+
+I started with trying to regain my fundamentals by reading through this code.
+
+The index.html file creates a <div> on the right with a class of "right" and within it a "gridContainer." It is right-justified per style.css
+
+Then there is a div with class "page" where all the buttons go.
+
+The bulk of the work is in the JS script.
+
+First, the createGrid() function loops until numberOfSquares is reached. Upon each loop, a div with the characteritics of "unlitSquare" is added and given an event listener that activates function pickPen on mouseover, and is appended to grid.
+
+grid is document.querySelector(".gridContainer")
+
+Pickpen uses a bunch of if then statements to decide how to draw the lines (colored or rainbow, shaded or not) with the booleans of shadeSwitch and colorSwitch.
+
+shadeSwitch and colorSwitch are boolean functions attached to eventlisteners to the buttons in the html.
+
+That's the basic framework. There is one old line I'm not aware of the purpose it serves:
+let freshGrid = document.querySelector('#refresh');
+
+freshGrid variable is never used.
+
+I was a little confused by the behavior of the program, but this is what I found:
+
+Black doesn't overwrite shaded lines on first pass, the effect is cumulative
+Rainbow overwrites shading because even faint lines overwrite gray
+
+Rainbow overwrites black
+Black overwrites rainbow
+
+Shading overwrites black
+Shading overwrites rainbow
+
+11/20/21 -- all set with this one. 
+
+
+
+
+Previous Directions: Last commit was June 8, 2020!
 # Etch-a-Sketch
 https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project
 
@@ -20,8 +61,12 @@ Hint: “hovering” is what happens when your mouse enters a div and ends when 
 There are multiple ways to change the color of the divs, including:
 adding a new class to the div
 changing the div’s background color using JavaScript.
+
 Add a button to the top of the screen which will clear the current grid and send the user a popup asking for how many squares per side to make the new grid. Once entered the new grid should be generated in the same total space as before (e.g. 960px wide) and now you’ve got a new sketch pad.
+
 Research button tags in HTML and how you can make a JavaScript function run when one is clicked.
 Also check out prompts
+
 You should be able to enter 64 and have a brand new 64x64 grid pop up without changing the total amount of pixels used
+
 (Optional): Instead of just changing the color of your grid from black to white (for example) have each pass through it with the mouse change to a completely random RGB value. Then try having each pass just add another 10% of black to it so that only after 10 passes is the square completely black.
