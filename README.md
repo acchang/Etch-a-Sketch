@@ -1,5 +1,5 @@
 
-Nov. 19, 2021 -- Returning to the Odin course
+Nov. 19, 2021 -- Returning to the Odin course again
 
 I started with trying to regain my fundamentals by reading through this code.
 
