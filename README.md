@@ -22,6 +22,20 @@ let freshGrid = document.querySelector('#refresh');
 
 freshGrid variable is never used.
 
+I was a little confused by the behavior of the program, but this is what I found:
+
+Black doesn't overwrite shaded lines on first pass, the effect is cumulative
+Rainbow overwrites shading because even faint lines overwrite gray
+
+Rainbow overwrites black
+Black overwrites rainbow
+
+Shading overwrites black
+Shading overwrites rainbow
+
+
+
+
 
 Previous Directions: Last commit was June 8, 2020!
 # Etch-a-Sketch
